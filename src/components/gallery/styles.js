@@ -42,9 +42,9 @@ export const ShotsList = styled.div`
 `
 
 export const ShotContainer = styled.div`
-  width: 300px;
-  height: 300px;
-  padding: 5px;
+  width: 282px;
+  height: 282px;
+  padding: 14px;
   cursor: pointer;
   object-fit: contain;
   object-position: 50% 50%;
