@@ -32,6 +32,6 @@ export const Cameras = styled.div`
 
 export const FooterText = styled.p`
   display: inline-block;
-  font: 20px/20px 'Roboto', sans-serif;
+  font: 20px/20px 'Ubuntu', sans-serif;
   color: #fff;
 `

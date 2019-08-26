@@ -9,6 +9,8 @@ export const MainContainer = styled.section`
 export const TabsContainer = styled.section`
   max-width: 935px;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
   box-sizing: border-box;
   margin: 0 auto;
   height: max-content;
@@ -27,6 +29,9 @@ export const TabItem = styled.span`
     color: #f9c806;
   }
   &:first-child {
+    margin-left: 10px;
+  }
+  @media (max-width: 546px) {
     margin-left: 10px;
   }
 `

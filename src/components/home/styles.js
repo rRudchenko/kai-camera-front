@@ -34,7 +34,7 @@ export const HomeIcon = styled(Img)`
 `
 
 export const HomeText = styled.p`
-  font: 25px/35px 'Roboto', sans-serif;
+  font: 25px/35px 'Ubuntu', sans-serif;
   color: #4e4e4e;
   @media (max-width: 596px) {
     text-align: center;
