@@ -14,7 +14,7 @@ export const HomeContainer = styled.section`
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 10px;
+  /* padding: 10px; */
   @media (max-width: 596px) {
     flex-wrap: wrap;
     justify-content: center;
