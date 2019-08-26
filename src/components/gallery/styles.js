@@ -13,8 +13,9 @@ export const TabsContainer = styled.section`
   flex-flow: row wrap;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-bottom: 10px;
   height: max-content;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid #efefef;
 `
 
 export const TabItem = styled.span`
@@ -23,10 +24,12 @@ export const TabItem = styled.span`
   box-sizing: border-box;
   color: #4e4e4e;
   opacity: 0.6;
+  border-bottom: 1px solid transparent;
   text-decoration: none;
   transition: color 0.5s;
   &:hover {
     color: #f9c806;
+    border-bottom: 1px solid #f9c806;
   }
   &:first-child {
     margin-left: 10px;
