@@ -36,7 +36,7 @@ class Header extends Component {
           <Menu onClick={this.toggleIsOpen} isOpen={this.state.isOpen}>
             <LinkStyle to='/subscribe/'>subscribe</LinkStyle>
             <LinkStyle to='/donate/'>donate</LinkStyle>
-            <LinkStyle to='/about/'>about</LinkStyle>
+            <LinkStyle to='/about/'>about kai.camera</LinkStyle>
           </Menu>
         </Container>
       </HeaderU>
