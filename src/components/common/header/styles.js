@@ -20,6 +20,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  border-bottom: 1px solid #e3e3e3;
 `
 export const LogoStyle = styled(Link)`
   z-index: ${({ isOpen }) => (isOpen ? '100' : '10')};
