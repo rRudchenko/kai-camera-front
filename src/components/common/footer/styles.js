@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
   padding: 0;
   margin: 0;
   width: 100%;
+  height: 80px;
   background: #f9c806;
 `
 
@@ -34,6 +35,9 @@ export const Cameras = styled.div`
 
 export const FooterText = styled.p`
   display: inline-block;
-  font: 20px/20px 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
   color: #fff;
 `

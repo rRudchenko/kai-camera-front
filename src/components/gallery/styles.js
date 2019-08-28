@@ -14,28 +14,33 @@ export const TabsContainer = styled.section`
   box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 10px;
-  height: max-content;
   border-bottom: 1px solid #efefef;
 `
 
 export const TabItem = styled.span`
-  font: 20px/50px 'Ubuntu', sans-serif;
-  margin-left: 28px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  text-decoration: none;
+  cursor: pointer;
+  height: 35px;
+  margin-left: 50px;
   box-sizing: border-box;
   color: #4e4e4e;
   opacity: 0.6;
   border-bottom: 1px solid transparent;
-  text-decoration: none;
   transition: color 0.5s;
   &:hover {
     color: #f9c806;
+    /* font-weight: 500; */
     border-bottom: 1px solid #f9c806;
   }
   &:first-child {
     margin-left: 10px;
   }
   @media (max-width: 546px) {
-    margin-left: 10px;
+    margin-left: 25px;
   }
 `
 
@@ -110,6 +115,7 @@ export const Close = styled.div`
   width: 20px;
   height: auto;
   position: absolute;
+  top: 10px;
   right: 20px;
   z-index: 1900;
   cursor: pointer;

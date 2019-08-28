@@ -7,6 +7,7 @@ export const HeaderU = styled.header`
   box-sizing: border-box;
   width: 100%;
   height: 80px;
+  border-bottom: 1px solid #e3e3e3;
 `
 export const Container = styled.div`
   box-sizing: border-box;
@@ -20,7 +21,6 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #e3e3e3;
 `
 export const LogoStyle = styled(Link)`
   z-index: ${({ isOpen }) => (isOpen ? '100' : '10')};
@@ -120,7 +120,10 @@ export const LinkStyle = styled(Link).attrs(p => ({
 }))`
   display: inline-block;
   position: relative;
-  font: 20px/50px 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
   color: #4e4e4e;
   opacity: 0.6;
   text-decoration: none;
@@ -128,9 +131,10 @@ export const LinkStyle = styled(Link).attrs(p => ({
   transition: color 0.5s;
   &:hover {
     color: #f9c806;
+    /* border-bottom: 2px solid #f9c806; */
   }
   &:not(:first-child) {
-    margin-left: 28px;
+    margin-left: 50px;
   }
 
   @media (max-width: 992px) {
