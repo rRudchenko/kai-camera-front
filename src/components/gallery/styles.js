@@ -12,7 +12,7 @@ export const TabsContainer = styled.section`
   box-sizing: border-box;
   margin: 0 auto;
   height: max-content;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid #efefef;
 `
 
 export const TabItem = styled.span`

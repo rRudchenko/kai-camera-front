@@ -119,11 +119,10 @@ export const LinkStyle = styled(Link).attrs(p => ({
 }))`
   display: inline-block;
   position: relative;
-  font: 20px/50px 'Roboto', sans-serif;
+  font: 20px/50px 'Ubuntu', sans-serif;
   color: #4e4e4e;
   opacity: 0.6;
   text-decoration: none;
-  text-transform: uppercase;
   border-top: 3px solid transparent;
   transition: color 0.5s;
   &:hover {
