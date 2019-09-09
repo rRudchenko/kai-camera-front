@@ -129,3 +129,11 @@ export const MaterialIcon = styled.div`
   color: #f9c806;
   font-size: 60px;
 `
+export const NoPhoto = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+`
