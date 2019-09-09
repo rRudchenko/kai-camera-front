@@ -115,7 +115,7 @@ video {
   padding: 0;
   outline: none;
   font-size: 100%;
-  font: 25px/35px 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 ul,

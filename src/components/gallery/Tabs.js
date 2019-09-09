@@ -1,7 +1,7 @@
 import React from 'react'
 import { TabsContainer, TabItem } from './styles'
 
-const filters = ['all', 'featured', 'games', 'toys']
+const filters = ['all photos', 'featured', 'games', 'toys']
 
 export const Tabs = () => (
   <TabsContainer>
