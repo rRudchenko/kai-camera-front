@@ -42,8 +42,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-dropbox',
       options: {
-        accessToken:
-          'auTelTITMHAAAAAAAAAAE9_IiPKVdiqJmW69zJY1MtO4IoOlKz6SjfpEQPIAm2Bl',
+        accessToken: '2J1AAAAAAAAAAF1ZmSgXkJSaePHtOyEJE0nLjAEULLcPHq6ICdeqG3uQd',
         extensions: ['.jpg', '.png'],
         path: '',
         recursive: false,
