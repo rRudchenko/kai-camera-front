@@ -13,7 +13,7 @@
 2. select your git account with 'kai-camera' repo in it, wait for deploy
 3. go Overview > Site settings > Functions, press 'Edit settings', type './functions' in field 'Functions Directory', then press 'Save'.
 4. go Overview > Site settings > Build & deploy, and there go:
-5. Build hooks: press 'Add build hook'. type NETLIFY_BUILD_HOOK_URL and press 'Save'. copy build hook URL to clipboard. in root folder of kai-camera repository find "/functions/dropbox-webhook.js", and there on line 5 paste URL like this:
+5. Build hooks: press 'Add build hook'. type NETLIFY_BUILD_HOOK_URL and press 'Save'. copy build hook URL to clipboard. in root folder of kai-camera repository find "/functions/dropbox-webhook.js", and there on line 3 paste URL like this:
 ```
 const NETLIFY_BUILD_HOOK_URL = '<YOUR-BUILD-HOOK-URL>'
 ```
@@ -29,9 +29,9 @@ const NETLIFY_BUILD_HOOK_URL = '<YOUR-BUILD-HOOK-URL>'
 6. Name your app: type your app name
 7. click 'Create app' button
 8. Find string 'Generated access token' and click 'generate'. copy generated token in clipboard
-9. in root folder of kai-camera repository find file "gatsby-config.js", and there on line 4 paste URL like this:
+9. in root folder of kai-camera repository find file "gatsby-config.js", and there on line 45 paste token like this:
 ```
-const DBX_ACCESS_TOKEN = '<your-token>'
+accessToken: '<your-token>',
 ```
 10. Netlify: go Overview > Site settings > Build & deploy > Environment > Environment variables: click 'Edit variables'. Type DBX_ACCESS_TOKEN as a 'key' and paste generated token as a variable's 'value'
 11. commit changes and push it in your kai-camera repo

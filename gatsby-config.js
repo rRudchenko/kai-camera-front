@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'KAI CAMERA',
+    title: 'KAI CAMERA'
   },
   plugins: [
     'gatsby-image',
@@ -9,24 +9,24 @@ module.exports = {
       options: {
         useMozJpeg: false,
         stripMetadata: true,
-        defaultQuality: 75,
-      },
+        defaultQuality: 75
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['material icons', 'roboto:300,400,500,700'],
-      },
+        fonts: ['material icons', 'roboto:300,400,500,700']
+      }
     },
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
+        name: 'pages'
+      }
     },
     {
       resolve: 'gatsby-plugin-manifest',
@@ -36,18 +36,18 @@ module.exports = {
         start_url: '/',
         background_color: '#fff',
         theme_color: '#fff',
-        display: 'minimal-ui',
-      },
+        display: 'minimal-ui'
+      }
     },
     {
       resolve: 'gatsby-source-dropbox',
       options: {
-        accessToken: '2J1AAAAAAAAAAF1ZmSgXkJSaePHtOyEJE0nLjAEULLcPHq6ICdeqG3uQd',
+        accessToken: 'auTelTITMHAAAAAAAAAAVG2deXn81gxoE1iBP2WvMZZxDSRmT5l7LtbPVHPr7Gsa',
         extensions: ['.jpg', '.png'],
         path: '',
-        recursive: false,
-      },
+        recursive: false
+      }
     },
-    'gatsby-plugin-netlify',
-  ],
+    'gatsby-plugin-netlify'
+  ]
 }

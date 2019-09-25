@@ -1,10 +1,10 @@
 const axios = require('axios')
 
-const NETLIFY_HOOK_URL = 'https://api.netlify.com/build_hooks/5d1103cb4b2d00d042fa8a36'
+const NETLIFY_BUILD_HOOK_URL = 'https://api.netlify.com/build_hooks/5d8b3064a0d893000e52be38'
 
 const VERIFICATION_HEADERS = {
   'Content-Type': 'text/plain',
-  'X-Content-Type-Options': 'nosniff',
+  'X-Content-Type-Options': 'nosniff'
 }
 
 exports.handler = async (event, context) => {
@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
     const { challenge } = queryStringParameters
     if (challenge) {
       console.info(
-        'Success: verification request received and responded to appropriately.',
+        'Success: verification request received and responded to appropriately.'
       )
       return { statusCode: 200, body: challenge, headers: VERIFICATION_HEADERS }
     }
@@ -23,13 +23,13 @@ exports.handler = async (event, context) => {
 
       await axios({
         method: 'post',
-        url: NETLIFY_HOOK_URL,
-        body: '',
+        url: NETLIFY_BUILD_HOOK_URL,
+        body: ''
       }).then(response => console.info('NOTIFICATION RESPONSE', response.data))
       return {
         statusCode: 200,
         body:
-          'BODY SUCCESS: webhook received from Dropbox and forwarded blah-blah-blah',
+          'BODY SUCCESS: webhook received from Dropbox and forwarded blah-blah-blah'
       }
     }
     const msg = 'Failed: the request was not what was expected so nothing happened.'
