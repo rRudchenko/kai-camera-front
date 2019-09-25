@@ -22,22 +22,19 @@ const NETLIFY_BUILD_HOOK_URL = '<YOUR-BUILD-HOOK-URL>'
 ## dropbox
 
 1. go to https://www.dropbox.com/developers
-2. click "App Console" button (top left corner)
+2. click "App Console" button (top right corner)
 3. click "Create App" button
 4. Choose an API: select 'Dropbox API'
 5. Choose the type of access you need: select 'App folder'
 6. Name your app: type your app name
-7. click 'Create app' button (bottom right area)
+7. click 'Create app' button
 8. Find string 'Generated access token' and click 'generate'. copy generated token in clipboard
 9. in root folder of kai-camera repository find file "gatsby-config.js", and there on line 4 paste URL like this:
 ```
 const DBX_ACCESS_TOKEN = '<your-token>'
 ```
-10. go Overview > Site settings > Build & deploy > Environment > Environment variables: click 'Edit variables'. Type DBX_ACCESS_TOKEN as a 'key' and paste generated token as a variable's 'value'
+10. Netlify: go Overview > Site settings > Build & deploy > Environment > Environment variables: click 'Edit variables'. Type DBX_ACCESS_TOKEN as a 'key' and paste generated token as a variable's 'value'
 11. commit changes and push it in your kai-camera repo
-
-
-
 
 
 ## How to build and run project:
