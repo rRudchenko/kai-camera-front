@@ -1,16 +1,13 @@
 # KAI camera
 
+# How to run project with dropbox and netlify:
 
-
-
-##How to run project with dropbox and netlify:
-
-###required accounts:
+## required accounts:
 1. github.com (gitlab) ###DOES! NOT! WORK! WITH! GITLAB!!######
 2. netlify.com
 3. dropbox
 
-###netlify
+## netlify
 1. get account on www.netlify.com
 1. click "new site from git"
 2. select your git account with 'kai-camera' repo in it, wait for deploy
@@ -22,7 +19,7 @@ const NETLIFY_BUILD_HOOK_URL = '<YOUR-BUILD-HOOK-URL>'
 ```
 5. Environment > Environment variables: click 'Edit variables'. Type NETLIFY_BUILD_HOOK_URL as a 'key' and paste value from clipboard as a variable's 'value'
 
-###dropbox
+## dropbox
 
 1. go to https://www.dropbox.com/developers
 2. click "App Console" button (top left corner)
