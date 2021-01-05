@@ -14,7 +14,7 @@
     "lintFix": "eslint . --fix"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "dotenv": "^8.0.0",
     "es6-promise": "^4.2.6",
     "gatsby": "^2.7.1",
